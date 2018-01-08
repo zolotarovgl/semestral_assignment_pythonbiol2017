@@ -1,8 +1,6 @@
 import os
 
-app = dash.Dash()
-server = app.server
-server.secret_key = os.environ.get('SECRET_KEY', 'fghjkl')
+
 
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
@@ -16,6 +14,11 @@ import dash; from dash.dependencies import Input, Output
 import dash_core_components as dcc; import dash_html_components as html
 import dash_html_components as html
 import plotly.graph_objs as go
+
+
+app = dash.Dash()
+server = app.server
+server.secret_key = os.environ.get('SECRET_KEY', 'fghjkl')
 
 
 #data preparation 
