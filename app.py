@@ -1,5 +1,6 @@
 import os
 
+app = dash.Dash()
 server = app.server
 server.secret_key = os.environ.get('SECRET_KEY', 'fghjkl')
 
@@ -58,7 +59,7 @@ counts['state'] = counts.state.str.upper()
 
 
 
-app = dash.Dash()
+
 
 app.layout = html.Div(children=[
     html.H1(children='UFO Sightings', style={'text-align': 'center','color': '#000444', 'fontSize': 24, 'font-weight': 'bold'}),
