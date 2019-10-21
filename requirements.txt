@@ -70,7 +70,7 @@ urllib3==1.22
 virtualenv==15.1.0
 wcwidth==0.1.7
 webencodings==0.5.1
-Werkzeug==0.13
+Werkzeug==0.15.3
 widgetsnbextension==2.0.0
 xlrd==1.1.0
 yarg==0.1.9
